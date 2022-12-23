@@ -12,7 +12,7 @@ class Program
         int count = 0;
         int num1;
         int num2;
-        int sum = 1;
+        double sum = 1;
 
         Console.WriteLine("this program calculates exponents with a while loop");
 
@@ -21,11 +21,26 @@ class Program
         Console.Write("to the power of: ");
         num2 = Convert.ToInt32(Console.ReadLine());
 
-        while (count < num2)
+        if(num2 > 0)
         {
-            sum *= num1;
-            count++;
+          while (count < num2)
+          {
+              sum *= num1;
+              count++;
+          }
         }
+      else if (num2 < 0)
+      {
+            while(count > num2) {
+                sum /= num1;
+    
+                count--;
+            }
+        }
+        else {
+            sum = 1;
+        }
+    
         Console.WriteLine("your answer is: " + sum + ".");
         Console.WriteLine("\nDone.");
     }
