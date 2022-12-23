@@ -21,21 +21,21 @@ class Program
         Console.Write("to the power of: ");
         num2 = Convert.ToInt32(Console.ReadLine());
 
-        if(num2 > 0)
+        if (num2 > 0)
         {
-          while (count < num2)
-          {
-              sum *= num1;
-              count++;
-          }
-        }
-      else if (num2 < 0)
-      {
-            while(count > num2) {
-                sum /= num1;
-    
-                count--;
+            while (count < num2)
+            {
+                sum *= num1;
+                count++;
             }
+        }
+        else if (num2 < 0)
+        {
+              while(count > num2) {
+                  sum /= num1;
+      
+                  count--;
+              }
         }
         else {
             sum = 1;
