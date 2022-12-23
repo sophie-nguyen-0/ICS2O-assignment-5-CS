@@ -31,16 +31,18 @@ class Program
         }
         else if (num2 < 0)
         {
-              while(count > num2) {
-                  sum /= num1;
-      
-                  count--;
-              }
+            while(count > num2)
+            {
+                sum /= num1;
+
+                count--;
+            }
         }
-        else {
+        else
+        {
             sum = 1;
         }
-    
+
         Console.WriteLine("your answer is: " + sum + ".");
         Console.WriteLine("\nDone.");
     }
