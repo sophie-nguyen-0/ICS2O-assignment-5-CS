@@ -31,7 +31,7 @@ class Program
         }
         else if (num2 < 0)
         {
-            while(count > num2)
+            while (count > num2)
             {
                 sum /= num1;
 
